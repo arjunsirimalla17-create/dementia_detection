@@ -63,6 +63,13 @@ export default function Register() {
       // 2. Set display name in Firebase Auth
       await updateProfile(user, { displayName: formData.name });
 
+      // Clear previous user's data but keep language prefs
+      Object.keys(localStorage).forEach(key => {
+        if (key !== 'i18nextLng' && key !== 'preferredLanguage') {
+          localStorage.removeItem(key);
+        }
+      });
+
       // 3. Save extra details (phone, age, gender, language) to Firestore
       await setDoc(doc(db, "users", user.uid), {
         name: formData.name,
@@ -72,6 +79,7 @@ export default function Register() {
         gender: formData.gender,
         language: formData.language,
         joined: new Date().toISOString(),
+        streak: 0,
       });
 
       // 4. Save to localStorage so Dashboard/Sidebar can read it
@@ -80,6 +88,7 @@ export default function Register() {
         name: formData.name,
         email: formData.email,
         joined: new Date().toISOString(),
+        streak: 0,
       }));
 
       // 5. Apply selected language preference

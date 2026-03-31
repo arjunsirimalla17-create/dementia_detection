@@ -33,12 +33,20 @@ export default function Login() {
       const userDoc = await getDoc(doc(db, "users", user.uid));
       const userData = userDoc.exists() ? userDoc.data() : {};
 
+      // Clear previous user's data but keep language prefs
+      Object.keys(localStorage).forEach(key => {
+        if (key !== 'i18nextLng' && key !== 'preferredLanguage') {
+          localStorage.removeItem(key);
+        }
+      });
+
       // 3. Save to localStorage so Dashboard/Sidebar can read it
       localStorage.setItem("authToken", await user.getIdToken());
       localStorage.setItem("user", JSON.stringify({
         name: userData.name || user.displayName || user.email.split("@")[0],
         email: user.email,
         joined: userData.joined || user.metadata.creationTime,
+        streak: userData.streak || 0,
       }));
 
       // 4. Restore preferred language if saved

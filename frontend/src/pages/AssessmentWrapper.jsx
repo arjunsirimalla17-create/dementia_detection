@@ -458,7 +458,7 @@ function VideoComprehensionTest({ onComplete }) {
   const VIDEO_POOL = [
     {
       id: 'v1',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+      url: 'https://media.w3.org/2010/05/bunny/trailer.mp4',
       title: { en: 'Forest & Animals Scene', hi: 'जंगल और जानवर', te: 'అడవి మరియు జంతువులు' },
       questions: {
         en: [
@@ -486,7 +486,7 @@ function VideoComprehensionTest({ onComplete }) {
     },
     {
       id: 'v2',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+      url: 'https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4',
       title: { en: 'Mechanical World', hi: 'यांत्रिक दुनिया', te: 'యాంత్రిక ప్రపంచం' },
       questions: {
         en: [
@@ -514,7 +514,7 @@ function VideoComprehensionTest({ onComplete }) {
     },
     {
       id: 'v3',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+      url: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
       title: { en: 'High Energy Action Scene', hi: 'उच्च ऊर्जा एक्शन दृश्य', te: 'అధిక శక్తి యాక్షన్ దృశ్యం' },
       questions: {
         en: [
@@ -542,7 +542,7 @@ function VideoComprehensionTest({ onComplete }) {
     },
     {
       id: 'v4',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+      url: 'https://archive.org/download/Route_66_-_an_American_badDream/Route_66_-_an_American_badDream_512kb.mp4',
       title: { en: 'Road & Off-Road Driving', hi: 'सड़क और ऑफ-रोड ड्राइविंग', te: 'రోడ్ మరియు ఆఫ్-రోడ్ డ్రైవింగ్' },
       questions: {
         en: [
@@ -570,7 +570,7 @@ function VideoComprehensionTest({ onComplete }) {
     },
     {
       id: 'v5',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
+      url: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
       title: { en: 'Outdoor Crowd Event', hi: 'बाहरी भीड़ कार्यक्रम', te: 'బహిరంగ గుంపు కార్యక్రమం' },
       questions: {
         en: [
@@ -598,7 +598,7 @@ function VideoComprehensionTest({ onComplete }) {
     },
     {
       id: 'v6',
-      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+      url: 'https://media.w3.org/2010/05/bunny/trailer.mp4',
       title: { en: 'Nature Adventure Scene', hi: 'प्रकृति साहसिक दृश्य', te: 'ప్రకృతి సాహస దృశ్యం' },
       questions: {
         en: [
@@ -641,7 +641,7 @@ function VideoComprehensionTest({ onComplete }) {
   const currentTitle = currentVideo.title[getLangKey()];
 
   const handleTimeUpdate = (e) => {
-    if (e.target.currentTime >= 30) setWatchedEnough(true);
+    if (e.target.currentTime >= 10) setWatchedEnough(true);
   };
 
   const handleProceedToQuestions = () => setPhase('questions');
@@ -698,7 +698,7 @@ function VideoComprehensionTest({ onComplete }) {
                   <Button onClick={handleProceedToQuestions} className="mt-8">{t("tests.videoComprehension.errorBtn") || "Answer Questions"}</Button>
                 </div>
               ) : (
-                <video key={currentVideo.url} className="w-full h-full object-cover" controls crossOrigin="anonymous"
+                <video key={currentVideo.url} className="w-full h-full object-cover" controls
                   onCanPlay={() => setVideoReady(true)}
                   onError={() => { setVideoError(true); setVideoReady(true); setWatchedEnough(true); }}
                   onTimeUpdate={handleTimeUpdate}>
@@ -710,7 +710,7 @@ function VideoComprehensionTest({ onComplete }) {
             {!watchedEnough && !videoError && (
               <div className="w-full mt-4">
                 <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
-                  <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 30, ease: "linear" }}
+                  <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 10, ease: "linear" }}
                     className="h-full bg-risk-high" onAnimationComplete={() => setWatchedEnough(true)} />
                 </div>
                 <p className="text-textMuted text-xs mt-2 text-center uppercase tracking-widest">

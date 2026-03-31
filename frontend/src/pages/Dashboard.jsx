@@ -41,8 +41,8 @@ export default function Dashboard() {
   const [modules, setModules] = useState([]);
   const [riskScore, setRiskScore] = useState(null);
 
-  // ✅ Read real user from localStorage — no more hardcoded Justin!
-  const [user, setUser] = useState({ name: "User", streak: 5 });
+  // ✅ Read real user from localStorage
+  const [user, setUser] = useState({ name: "User", streak: 0 });
 
   useEffect(() => {
     const data = loadTestData();
@@ -57,7 +57,7 @@ export default function Dashboard() {
         name: parsed.name || "User",
         email: parsed.email || "",
         joined: parsed.joined || "",
-        streak: 5,
+        streak: parsed.streak || 0,
       });
     }
   }, []);

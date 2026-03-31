@@ -22,7 +22,11 @@ export default function Sidebar({ user }) {
   ];
 
   const handleLogout = () => {
-    localStorage.clear();
+    Object.keys(localStorage).forEach(key => {
+      if (key !== 'i18nextLng' && key !== 'preferredLanguage') {
+        localStorage.removeItem(key);
+      }
+    });
     window.location.href = "/";
   };
 
@@ -36,8 +40,8 @@ export default function Sidebar({ user }) {
 
       <div className="flex-1 py-8 flex flex-col gap-2 px-4 overflow-y-auto">
         {/* User Card */}
-        <NavLink 
-          to="/profile" 
+        <NavLink
+          to="/profile"
           className={({ isActive }) => `mb-8 p-4 bg-bg-elevated rounded-xl border border-border flex items-center gap-3 transition-all hover:border-accent-teal/50 ${isActive ? 'border-accent-teal/50 ring-1 ring-accent-teal/20' : ''}`}
         >
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent-purple to-accent-teal flex items-center justify-center text-white font-bold text-lg">
@@ -45,25 +49,24 @@ export default function Sidebar({ user }) {
           </div>
           <div>
             <p className="text-sm font-semibold text-textPrimary">
-            {user?.name || t("sidebar.viewProfile")}
-          </p>
-          <p className="text-xs text-textMuted hover:text-accent-teal transition-colors">{t("sidebar.viewProfile")}</p>
-        </div>
-      </NavLink>
+              {user?.name || t("sidebar.viewProfile")}
+            </p>
+            <p className="text-xs text-textMuted hover:text-accent-teal transition-colors">{t("sidebar.viewProfile")}</p>
+          </div>
+        </NavLink>
 
-      <div className="text-xs uppercase font-bold text-textMuted mb-2 px-2 tracking-wider">
-        {t("sidebar.menu")}
-      </div>
+        <div className="text-xs uppercase font-bold text-textMuted mb-2 px-2 tracking-wider">
+          {t("sidebar.menu")}
+        </div>
 
         {navItems.map((item) => (
           <NavLink
             key={item.path}
             to={item.path}
             className={({ isActive }) =>
-              `flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${
-                isActive
-                  ? "bg-accent-teal/10 text-accent-teal shadow-[inset_4px_0_0_0_var(--accent-teal)]"
-                  : "text-textSecondary hover:bg-bg-elevated hover:text-white"
+              `flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${isActive
+                ? "bg-accent-teal/10 text-accent-teal shadow-[inset_4px_0_0_0_var(--accent-teal)]"
+                : "text-textSecondary hover:bg-bg-elevated hover:text-white"
               }`
             }
           >
@@ -78,17 +81,16 @@ export default function Sidebar({ user }) {
         <NavLink
           to="/settings"
           className={({ isActive }) =>
-            `flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${
-              isActive
-                ? "bg-accent-teal/10 text-accent-teal shadow-[inset_4px_0_0_0_var(--accent-teal)]"
-                : "text-textSecondary hover:bg-bg-elevated hover:text-white"
+            `flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm ${isActive
+              ? "bg-accent-teal/10 text-accent-teal shadow-[inset_4px_0_0_0_var(--accent-teal)]"
+              : "text-textSecondary hover:bg-bg-elevated hover:text-white"
             }`
           }
         >
           <Settings size={20} />
           {t("sidebar.settings")}
         </NavLink>
-        <button 
+        <button
           onClick={handleLogout}
           className="flex w-full items-center gap-3 px-4 py-3 mt-1 rounded-xl transition-all font-medium text-sm text-red-400 hover:bg-red-400/10 hover:text-red-300"
         >
