@@ -1,0 +1,564 @@
+{
+  "translation": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How It Works",
+      "science": "Science",
+      "about": "About",
+      "login": "Login",
+      "register": "Register",
+      "startAssessment": "Start Assessment",
+      "assessments": "Assessments",
+      "watchDemo": "Watch Demo",
+      "quitTest": "Quit Test",
+      "confirmQuit": "Are you sure you want to quit? Any unsaved progress will be lost.",
+      "testNotFound": "Test not found."
+    },
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "hub": "Assessment Hub",
+      "results": "My Results",
+      "settings": "Settings",
+      "logout": "Logout",
+      "viewProfile": "View Profile →",
+      "menu": "Menu"
+    },
+    "hero": {
+      "eyebrow": "Clinical-Grade Assessment",
+      "h1_line1": "Detect Cognitive",
+      "h1_line2": "Decline Before",
+      "h1_line3": "It's Too Late",
+      "subtitle": "The first clinical-grade neurological assessment platform delivered through a premium, digital experience. Powered by Neuro-Linguistic AI for 94.2% detection accuracy.",
+      "primaryCta": "Create Account →",
+      "secondaryCta": "Sign In",
+      "trust": {
+        "hipaa": "HIPAA Compliant",
+        "research": "Research Validated",
+        "rating": "4.9/5 Rating"
+      }
+    },
+    "stats": {
+      "usersAssessed": "Users Assessed",
+      "detectionGenAccuracy": "Detection Accuracy",
+      "languagesSupported": "Languages Supported",
+      "averageTestTime": "Average Test Time"
+    },
+    "dashboard": {
+      "welcome": "Welcome, {{name}}",
+      "patientOverview": "Patient Overview",
+      "dayStreak": "{{count}} DAY STREAK",
+      "status": {
+        "notStarted": "Start your assessments to build your cognitive profile.",
+        "inProgress": "{{completed}}/6 assessments completed. Keep going!",
+        "allDone": "All assessments complete! View your full report."
+      },
+      "riskScore": "RISK SCORE",
+      "progress": "PROGRESS",
+      "streak": "STREAK",
+      "statusTitle": "STATUS",
+      "phaseOne": "PHASE ONE",
+      "activeDays": "ACTIVE DAYS",
+      "allDone": "ALL DONE",
+      "inProgress": "IN PROGRESS",
+      "notStarted": "NOT STARTED",
+      "viewReport": "VIEW REPORT →",
+      "neuroAnalysis": "Neuro Analysis",
+      "completeToGenerate": "Complete assessments to generate your score",
+      "startNow": "Start Now →",
+      "insightsTitle": "Neurological Insights",
+      "assessmentModules": "Assessment Modules",
+      "phase1Battery": "PHASE 1 CORE BATTERY",
+      "goToHub": "GO TO HUB",
+      "startFirst": "Start Your First Assessment →",
+      "achievements": "Your Achievements"
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your clinical profile and diagnostic preferences.",
+      "controlCenter": "Control Center",
+      "saved": "Saved!",
+      "language": "Language",
+      "languageDesc": "Changes all text, questions, and options instantly",
+      "notifications": "Notifications",
+      "notificationsDesc": "Daily cognitive checkup reminders",
+      "soundEffects": "Sound Effects",
+      "soundEffectsDesc": "Audio feedback during assessments",
+      "reduceMotion": "Reduce Motion",
+      "reduceMotionDesc": "Minimize animations for accessibility",
+      "highContrast": "High Contrast Mode",
+      "highContrastDesc": "Improved visibility for clinical environments",
+      "darkMode": "Liquid Dark Mode",
+      "darkModeDesc": "Optimized for clinical readability",
+      "alwaysOn": "Always On",
+      "privacy": "Privacy & HIPAA",
+      "privacyDesc": "All voice and biometric data is encrypted locally",
+      "secure": "SECURE",
+      "resetProgress": "Reset Test Progress",
+      "resetProgressDesc": "Clear completed test data so you can retake all assessments. Your settings will be preserved.",
+      "resetTestsButton": "Reset Tests Only",
+      "dangerZone": "Danger Zone",
+      "purgeHistory": "Purge Clinical History",
+      "purgeHistoryDesc": "Permanently deletes ALL data including settings, test results, and preferences. This cannot be reversed.",
+      "factoryReset": "Factory Reset"
+    },
+    "hub": {
+      "title": "Cognitive Battery",
+      "eyebrow": "Diagnostic Suite",
+      "subtitle": "Complete all modules below to generate your biometric-grade risk report. Progress is persisted automatically.",
+      "resetData": "Reset Factory Data",
+      "generateReport": "Generate Report",
+      "viewReport": "View Neurological Report",
+      "progress": "{{completed}}/{{total}} tests completed",
+      "completed": "Completed",
+      "score": "Score: {{score}}%",
+      "completedAt": "Completed {{time}}",
+      "analyzing": "Analyzing Results...",
+      "saving": "Saving your assessment data securely.",
+      "modules": {
+        "wordRecall": {
+          "desc": "Memory retention test using randomized word pools."
+        },
+        "patternRecognition": {
+          "desc": "Identify the missing link in visual pattern sequences."
+        },
+        "numberSequence": {
+          "desc": "Determine the missing number in complex mathematical series."
+        },
+        "mathReasoning": {
+          "desc": "Solve short story-based arithmetic problems under pressure."
+        },
+        "reactionTime": {
+          "desc": "Measures your motor-cognitive response time in milliseconds."
+        },
+        "videoComprehension": {
+          "desc": "Watch a short film and answer episodic memory questions."
+        },
+        "voiceAnalysis": {
+          "title": "Voice Analysis",
+          "desc": "Advanced AI detects hesitation and speech speed markers."
+        },
+        "videoAnalysis": {
+          "title": "Video Analysis",
+          "desc": "30-second AI facial tracking for motor and affective biomarkers."
+        }
+      }
+    },
+    "tests": {
+      "notFound": "Test module not found.",
+      "wordRecall": {
+        "title": "Word Recall",
+        "instructions": "You will be shown 5 words one by one.",
+        "recall_instr": "Try to remember as many as possible.",
+        "ready": "I'm Ready",
+        "memorize": "Memorize",
+        "distraction": "Wait for 15 seconds...",
+        "distraction_note": "A short pause helps test long-term retention.",
+        "recall_title": "Recall the Words",
+        "submit": "Submit Results",
+        "placeholder": "Type word",
+        "words": [
+          "Apple",
+          "Table",
+          "Penny",
+          "Elephant",
+          "River"
+        ]
+      },
+      "patternRecognition": {
+        "title": "Pattern Recognition",
+        "instructions": "Identify the next shape in the visual sequence.",
+        "start": "Start Test",
+        "level": "Level {{current}} of {{total}}",
+        "prompt": "Select the next shape:"
+      },
+      "numberSequence": {
+        "title": "Number Sequence",
+        "instructions": "Determine the mathematical logic and find the missing number.",
+        "start": "Start Test",
+        "level": "Level {{current}} of {{total}}",
+        "placeholder": "Enter missing number",
+        "submit": "Submit Answer"
+      },
+      "mathReasoning": {
+        "title": "Math Reasoning",
+        "instructions": "Solve these everyday mathematical scenarios to test cognitive processing.",
+        "start": "Start Test",
+        "level": "Question {{current}} of {{total}}",
+        "placeholder": "Your answer",
+        "submit": "Submit Answer",
+        "questions": {
+          "q1": "If you buy 3 apples for $1.50 each and pay with a $10 bill, how much change do you receive?",
+          "q2": "A train leaves at 3:15 PM and travels for 2 hours and 45 minutes. What time does it arrive?",
+          "q3": "Subtract 7 from 100, then subtract 7 from that result. What is the final number?"
+        }
+      },
+      "reactionTime": {
+        "title": "Reaction Time",
+        "instructions": "Click the screen as fast as you can when it turns green.",
+        "start": "Start Test",
+        "attempt": "Attempt {{current}} of {{total}}",
+        "avg": "Avg: {{avg}} ms",
+        "wait": "Wait...",
+        "click": "CLICK NOW!",
+        "tooEarly": "Too Early!",
+        "continue": "Click anywhere to continue"
+      },
+      "videoComprehension": {
+        "title": "Video Comprehension",
+        "instructions": "Watch the video carefully. You will then be asked 5 questions about what you observed. Pay attention to people, settings, mood, and movement.",
+        "start": "Start Video Test",
+        "loading": "Loading video...",
+        "watchNote": "Watch at least 10 seconds to proceed",
+        "watchedBtn": "I've Watched → Answer Questions",
+        "proceedBtn": "Proceed to Questions →",
+        "comprehension": "Comprehension",
+        "level": "Question {{current}} of {{total}}",
+        "errorTitle": "Video unavailable — using text scenario",
+        "errorBtn": "Answer Questions About This Scene",
+        "fallbackText": "A person is walking through a busy outdoor area. There are several vehicles moving along a road nearby. The scene is bright and sunny with clear skies. Some trees and natural scenery are visible in the background. The overall pace of the scene is energetic and lively.",
+        "questions": [
+          {
+            "q": "How many people did you observe in the scene?",
+            "options": [
+              "None",
+              "1–2 people",
+              "3–5 people",
+              "More than 5"
+            ],
+            "answer": "1–2 people"
+          },
+          {
+            "q": "What was the primary setting of the video?",
+            "options": [
+              "Indoors",
+              "Outdoors",
+              "Both indoor and outdoor",
+              "Cannot determine"
+            ],
+            "answer": "Outdoors"
+          },
+          {
+            "q": "What was the overall mood or pace of the scene?",
+            "options": [
+              "Calm and slow",
+              "Fast and energetic",
+              "Tense and urgent",
+              "Neutral and static"
+            ],
+            "answer": "Fast and energetic"
+          },
+          {
+            "q": "What time of day did the scene appear to take place?",
+            "options": [
+              "Early morning",
+              "Daytime",
+              "Evening",
+              "Night"
+            ],
+            "answer": "Daytime"
+          },
+          {
+            "q": "Which element was most prominent in the scene?",
+            "options": [
+              "People interacting",
+              "Vehicles or movement",
+              "Nature and landscape",
+              "Buildings and structures"
+            ],
+            "answer": "Vehicles or movement"
+          }
+        ]
+      },
+      "videoAnalysis": {
+        "title": "Video Biomarker Analysis",
+        "setupDesc": "Our advanced AI clinical engine tracks micro-expressions and motor stability markers to create a neuro-cognitive biometric profile.",
+        "init": "Initialize Analysis",
+        "loadingModels": "Loading Neural Models...",
+        "live": "Live Recording",
+        "focus": "Focus Here",
+        "recordingProgress": "Recording Progress",
+        "instructions": "Keep your face centered and look directly at the screen. Focus your gaze on the yellow circle when it appears.",
+        "analyzing": "Analyzing Biomarkers...",
+        "processingTensors": "Processing Neural Tensors",
+        "diagnosticSummary": "Diagnostic Summary",
+        "riskLow": "Low Cognitive Variance",
+        "riskModerate": "Moderate Signals Detected",
+        "riskHigh": "Elevated Biomarker Signals",
+        "retake": "Retake Session",
+        "complete": "Complete Module",
+        "signals": {
+          "flatAffect": "Facial Expression",
+          "blinkRate": "Blink Rate",
+          "headStability": "Head Stability",
+          "facialSymmetry": "Facial Symmetry"
+        },
+        "cards": {
+          "blinks": {
+            "title": "Ocular Patterns",
+            "desc": "Blink frequency and duration metrics."
+          },
+          "tremors": {
+            "title": "Motor Stability",
+            "desc": "Tracking microscopic facial muscle tremors."
+          },
+          "expressions": {
+            "title": "Affective Range",
+            "desc": "Emotional response and muscle activation."
+          },
+          "asymmetry": {
+            "title": "Facial Symmetry",
+            "desc": "Comparing bilateral facial movements."
+          }
+        }
+      }
+    },
+    "results": {
+      "title": "Clinical Report",
+      "eyebrow": "Diagnostic Output",
+      "date": "Generated on {{date}}",
+      "patientId": "ID: {{id}}",
+      "print": "Print",
+      "share": "Share",
+      "export": "Export PDF",
+      "unifiedRisk": "Unified Risk Score",
+      "riskDescription": "This score is a weighted aggregation of 7 cognitive dimensions. A score above 55 indicates a high probability of early-stage cognitive decline.",
+      "summaryTitle": "AI Diagnostic Summary",
+      "recommendation": "Clinical Recommendation: We strongly advise scheduling a consultation with a neurologist or cognitive specialist within the next 30 days to establish a definitive medical baseline.",
+      "biometricBreakdown": "Biometric Breakdown",
+      "coreDimension": "Core Dimension",
+      "clinicalScore": "Clinical Score",
+      "observation": "Neurological Observation",
+      "shareDoctor": "Share With Your Doctor",
+      "shareDoctorDesc": "This report is formatted for clinical review. Generate a secure, HIPAA-compliant link to send directly to your healthcare provider.",
+      "generateLink": "Generate Doctor's Link",
+      "highRisk": "High Risk",
+      "moderateRisk": "Moderate Risk",
+      "lowRisk": "Low Risk",
+      "summaryText": "Based on the comprehensive assessment completed today, the NeuroLoop diagnostic engine has classified your cognitive profile as {{risk}} for early-stage neurocognitive decline.",
+      "dimension1": {
+        "title": "Episodic & Working Memory",
+        "desc": "Marked difficulty in retaining new visual information and verbal lists after distraction."
+      },
+      "dimension2": {
+        "title": "Processing Speed & Phonation",
+        "desc": "Motor-cognitive reaction times are slower than expected, matching hesitation markers found in the Voice Analysis module."
+      }
+    },
+    "common": {
+      "loading": "Loading...",
+      "error": "Error",
+      "next": "Next",
+      "back": "Back",
+      "submit": "Submit",
+      "retry": "Retry",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "score": "Score",
+      "startTest": "Start Test"
+    },
+    "profile": {
+      "authorizedClinician": "Authorized Clinician",
+      "memberSince": "Member Since",
+      "testsCompleted": "Tests Completed",
+      "currentStreak": "Current Streak",
+      "days": "Days",
+      "biometricActivity": "Assessment Activity",
+      "noTests": "No assessments completed yet. Start your first test!",
+      "recently": "Recently",
+      "justNow": "Just now",
+      "minsAgo": "mins ago",
+      "hoursAgo": "hours ago",
+      "daysAgo": "days ago"
+    },
+    "auth": {
+      "loginTitle": "Welcome Back",
+      "loginSubtitle": "Log in to track your cognitive health progress.",
+      "registerTitle": "Create Account",
+      "registerSubtitle": "Join NeuroLoop to start your cognitive assessment.",
+      "emailLabel": "Email Address",
+      "nameLabel": "Full Name",
+      "passwordLabel": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Sign In",
+      "registerButton": "Create Free Account →",
+      "noAccount": "Don't have an account?",
+      "haveAccount": "Already have an account?",
+      "registerLink": "Create one →",
+      "loginLink": "Sign in →",
+      "authTab": "Sign In",
+      "regTab": "Register",
+      "joinPlatform": "Join The Platform",
+      "createAccount": "Create Your Clinical Profile",
+      "registerDesc": "Get started with your free cognitive assessment. No credit card required.",
+      "benefit1": "6 validated cognitive assessments",
+      "benefit2": "AI-generated risk report",
+      "benefit3": "Multi-language support",
+      "benefit4": "100% private and secure",
+      "terms": "By creating an account you agree to our Terms of Service and Privacy Policy.",
+      "orContinue": "Or continue with",
+      "clinicalInsight": "Clinical Insight",
+      "earlyDetection": "Early Detection Saves Lives",
+      "aiAssessment": "AI-powered cognitive assessment platform for early dementia detection.",
+      "hipaa": "HIPAA Compliant",
+      "encryption": "Encrypted"
+    },
+    "landing": {
+      "scrollToExplore": "Scroll to explore",
+      "howItWorks": {
+        "title": "Clinical Assessment in 3 Simple Steps",
+        "titleParts": {
+          "l1": "Clinical Assessment in",
+          "l2": "3 Simple Steps"
+        },
+        "subtitle": "Our AI processes 6 cognitive dimensions in under 20 minutes to provide a transparent, medical-grade assessment of your brain health.",
+        "step1": {
+          "title": "Secure Registration",
+          "desc": "Create your clinical profile to ensure all data is securely encrypted and HIPAA-compliant from the start."
+        },
+        "step2": {
+          "title": "Complete Battery",
+          "desc": "6 scientifically validated tests covering memory, pattern recognition, and vocal biomarkers."
+        },
+        "step3": {
+          "title": "Biometric Report",
+          "desc": "Receive a detailed, clinical-grade report with clear explanations and personalized next-step recommendations."
+        }
+      },
+      "whyNeuroLoop": {
+        "title": "Why NeuroLoop?",
+        "clinicalAccuracy": {
+          "title": "Clinical Accuracy",
+          "desc": "94.2% detection accuracy validated by extensive neurological research and real-world results."
+        },
+        "privacyFirst": {
+          "title": "Privacy First",
+          "desc": "All voice and biometric data is stored locally and encrypted. We never share your health information."
+        },
+        "multiLanguage": {
+          "title": "Multi-Language Support",
+          "desc": "Full support for English, Hindi, and Telugu, ensuring accessibility for diverse patient populations."
+        }
+      },
+      "whoIsThisFor": {
+        "title": "Who Is NeuroLoop For?",
+        "elderly": {
+          "title": "Elderly Patients",
+          "desc": "Early detection for better long-term outcomes and peace of mind for those at risk."
+        },
+        "caregivers": {
+          "title": "Caregivers",
+          "desc": "Monitor your loved ones' cognitive health with objective, data-driven insights and reporting."
+        },
+        "neurologists": {
+          "title": "Neurologists",
+          "desc": "Use as a preliminary screening tool to establish baseline cognitive metrics for your patients."
+        }
+      },
+      "science": {
+        "title": "The Science of NeuroLoop",
+        "titleParts": {
+          "l1": "The",
+          "l2": "Science",
+          "l3": "of NeuroLoop"
+        },
+        "biometrics": {
+          "title": "Biometric Biomarkers",
+          "desc": "Our clinical battery is based on the Mini-Cog and MoCA frameworks, enhanced by high-resolution motor-cognitive reaction timers."
+        },
+        "vocal": {
+          "title": "Vocal Prosody Analysis",
+          "desc": "NeuroLoop uses Natural Language Processing (NLP) to detect paralinguistic markers such as increased hesitation and changes in speech tempo."
+        },
+        "validation": {
+          "title": "Research-Backed Validation",
+          "desc": "Our algorithms are trained on diverse datasets of both neurotypical and cognitively impaired individuals, ensuring high sensitivity."
+        }
+      },
+      "about": {
+        "title": "Our Mission",
+        "titleParts": {
+          "l1": "Our",
+          "l2": "Mission"
+        },
+        "subtitle": "NeuroLoop Insight was born from a simple belief: that every individual deserves access to clinical-grade cognitive monitoring.",
+        "democratizing": {
+          "title": "Democratizing Detection",
+          "desc": "We leverage edge computing and advanced AI to bring the power of a neurology lab to any browser."
+        },
+        "privacy": {
+          "title": "Patient-Centric Privacy",
+          "desc": "Your brain data is the most personal information you own. NeuroLoop is built with zero-knowledge principles."
+        }
+      },
+      "riskClassification": {
+        "title": "Clinical-Grade Risk Classification",
+        "titleParts": {
+          "l1": "Clinical-Grade",
+          "l2": "Risk Classification"
+        },
+        "subtitle": "Our proprietary algorithm weighs multiple cognitive dimensions to generate a unified risk score.",
+        "low": "Cognitive function is stable. Continue brain-healthy habits.",
+        "moderate": "Minor cognitive slowing detected. Monitoring recommended.",
+        "high": "Significant decline detected. Consult a neurologist immediately."
+      },
+      "videoMemory": {
+        "title": "World-First: Video Memory Assessment",
+        "titleParts": {
+          "l1": "World-First:",
+          "l2": "Video Memory",
+          "l3": "Assessment"
+        },
+        "subtitle": "Watch a short scene, then answer questions about what you observed. Tests episodic memory — one of the earliest indicators.",
+        "newFeature": "New Feature"
+      },
+      "cta": {
+        "title": "Start Your Assessment Today",
+        "subtitle": "The most advanced cognitive screening platform available at your fingertips.",
+        "button": "Start Your Assessment — Register Now",
+        "alreadyHaveAccount": "Already have an account?",
+        "signInLink": "Sign in →"
+      },
+      "testimonials": {
+        "title": "Trusted by Early Adopters",
+        "david": {
+          "text": "The voice analysis tool caught a slight hesitancy my doctor missed. Caught it early, thankful for NeuroLoop.",
+          "location": "New York"
+        },
+        "sarah": {
+          "text": "Beautiful interface that doesn't feel clinical. The video comprehension test is surprisingly engaging and tough!",
+          "location": "London"
+        },
+        "james": {
+          "text": "I've started recommending this platform to my at-risk patients for baseline monitoring. The metrics are remarkably accurate.",
+          "location": "Neurologist"
+        }
+      },
+      "footer": {
+        "desc": "Advanced AI-powered cognitive health assessment platform. Early detection for a better tomorrow.",
+        "platform": {
+          "title": "Platform",
+          "assessments": "Assessments",
+          "clinicalResearch": "Clinical Research",
+          "howItWorks": "How it Works",
+          "dashboard": "Patient Dashboard"
+        },
+        "company": {
+          "title": "Company",
+          "about": "About Us",
+          "contact": "Contact",
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Service"
+        },
+        "contact": {
+          "title": "Contact"
+        },
+        "bottom": {
+          "built": "Built with precision",
+          "systems": "All systems operational",
+          "rights": "All rights reserved."
+        }
+      }
+    }
+  }
+}

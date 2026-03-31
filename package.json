@@ -1,0 +1,17 @@
+{
+  "name": "dementia-detection-app",
+  "version": "1.0.0",
+  "description": "Dementia Detection App with React Frontend and Node Backend",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run start",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "mobile:sync": "cd frontend && npx cap sync",
+    "mobile:open": "cd frontend && npx cap open android"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
